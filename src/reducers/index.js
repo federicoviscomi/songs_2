@@ -7,7 +7,7 @@ const songsReducers = () => {
     ];
 };
 
-const selectedSongReducer = (selectedSong = undefined, action) => {
+const selectedSongReducer = (selectedSong = null, action) => {
     if (action.type === 'SONG_SELECTED') {
         return action.payload;
     }
